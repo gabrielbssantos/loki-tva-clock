@@ -13,10 +13,24 @@
     <header class="header">
         <h1 class="title main-title">What time is it in your timeline?</h1>
     </header>
-
+    
     <main>
-        <div class="vertical-container">
-            <img src="img/miss-minutes.svg" alt="An animated clock character called Miss Minutes from Loki's TV show." class="clock-body">
+        <div class="vertical-container clockbox">
+            <img id="clock-body" src="img/miss-minutes.svg" alt="An animated clock character called Miss Minutes from Loki's TV show.">
+            
+            <svg  id="clock-arms" xmlns="http://www.w3.org/2000/svg" width="600" height="600"
+            viewBox="0 0 600 600">
+            <g id="hour">
+                <rect class="hour-arm" x="300" height="160" y="300" width="11"/>
+            </g>
+            <g id="minute">
+                <rect class="minute-arm" x="300" height="230" y="300" width="11"/>
+            </g>
+            <g id="second">
+                <rect class="second-arm" x="303" height="245" y="300" width="5"/>
+            </g>
+            <circle class="sizing-box" cx="305" cy="300" r="2.5%" style="fill: #879D68; stroke: #000; stroke-width: 2"/>
+        </svg>
         </div>
     </main>
 

@@ -26,13 +26,80 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 
-.clock-body {
+.clockbox {
     width: 80vw;
+    position: relative;
+    border: solid #000 3px;
+}
+
+#clock-body {
+    width: 100%;
     height: auto;
 }
 
+/* Clock styles */
+#clock-arms {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    top: 13.8%;
+    left: 15.7%;
+    border: solid #000 3px;
+}
+
+.mid-circle {
+    fill: #000;
+}
+
+.hour-arm {
+    fill: #FFF;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: #FFF;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: #879D68;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+#hour {
+    transform: rotate(10deg);
+}
+
+#minute {
+    transform: rotate(20deg);
+}
+
+#second {
+    transform: rotate(0deg);
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: #000;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: center center;
+    transition: transform .5s ease-in-out;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
