@@ -3,9 +3,10 @@
 
 /* GENERAL */
 body {
+    height: 100vh;
     padding: 2rem;
     font-family: 'Mouse Memoirs', sans-serif;
-    background-color: #D41921;
+    background: rgb(223,73,33)   radial-gradient(circle, rgba(223,73,33,1) 60%, rgba(63,14,3,1) 100%) no-repeat;
 }
 
 /* HEADER */
@@ -16,7 +17,7 @@ body {
 
 .main-title {
     color: #FFF;
-    font-size: 10vh;
+    font-size: 4rem;
     text-shadow: 0.25rem 0.25rem 0 #000;
 }
 
