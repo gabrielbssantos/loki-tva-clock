@@ -63,7 +63,7 @@ body {
     height: auto;
     position: absolute;
     top: -2.1%;
-    left: 11%;
+    left: 11.7%;
 }
 
 .mid-circle {
@@ -97,7 +97,6 @@ body {
 #minute,
 #second {
     transform-origin: center center;
-    transition: transform .5s ease-in-out;
 }
 
 
