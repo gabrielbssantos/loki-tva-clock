@@ -2,28 +2,46 @@
 
 
 /* GENERAL */
+
 body {
     height: 100vh;
     padding: 2rem;
     font-family: 'Mouse Memoirs', sans-serif;
     background: rgb(223,73,33)   radial-gradient(circle, rgba(223,73,33,1) 60%, rgba(63,14,3,1) 100%) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
 }
 
+
 /* HEADER */
+
+.header {
+    height: 15vh;
+}
 .title {
     font-family: 'Mouse Memoirs', sans-serif;
     text-align: center;
 }
 
 .main-title {
+    margin: 0 auto;
     color: #FFF;
     font-size: 4rem;
     text-shadow: 0.25rem 0.25rem 0 #000;
 }
 
+.main-section {
+    height: 70vh;
+    margin: 2rem 0;
+}
+
 
 /* CLOCK */
+
 .vertical-container {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,9 +49,8 @@ body {
 }
 
 .clockbox {
-    width: 80vw;
+    width: 100%;
     position: relative;
-    border: solid #000 3px;
 }
 
 #clock-body {
@@ -41,14 +58,12 @@ body {
     height: auto;
 }
 
-/* Clock styles */
 #clock-arms {
-    width: 65%;
+    width: 78%;
     height: auto;
     position: absolute;
-    top: 13.8%;
-    left: 15.7%;
-    border: solid #000 3px;
+    top: -2.1%;
+    left: 11%;
 }
 
 .mid-circle {
@@ -76,23 +91,6 @@ body {
     stroke-miterlimit: 10;
 }
 
-#hour {
-    transform: rotate(10deg);
-}
-
-#minute {
-    transform: rotate(20deg);
-}
-
-#second {
-    transform: rotate(0deg);
-}
-
-/* Transparent box ensuring arms center properly. */
-.sizing-box {
-    fill: #000;
-}
-
 /* Make all arms rotate around the same center point. */
 /* Optional: Use transition for animation. */
 #hour,
@@ -102,31 +100,60 @@ body {
     transition: transform .5s ease-in-out;
 }
 
+
+/* FOOTER */
+
+.footer {
+    height: 15vh;
+}
+
+
+
+/* BREAKPOINTS */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     
+    .main-title {
+        font-size: 5rem;
+        text-shadow: 0.3rem 0.3rem 0 #000;
+    }
 
+    .main-section {
+        width: 70vw;
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-
-
+    .main-section {
+        width: 60vw;
+    }
+    
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
-
-
+    
+    .main-title {
+        font-size: 6rem;
+        text-shadow: 0.3rem 0.3rem 0 #000;
+    }
+    
+    .main-section {
+        width: 50vw;
+    }
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-
+    .main-section {
+        width: 40vw;
+    }
 
 }
 
