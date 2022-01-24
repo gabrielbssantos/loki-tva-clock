@@ -4,22 +4,30 @@
 /* GENERAL */
 
 body {
+    width: 80vw;
     height: 100vh;
-    padding: 2rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 16px;
     font-family: 'Mouse Memoirs', sans-serif;
-    background: rgb(223,73,33)   radial-gradient(circle, rgba(223,73,33,1) 60%, rgba(63,14,3,1) 100%) no-repeat;
+    background: #879d68  radial-gradient(circle, rgba(135, 157, 104, 1) 40%, rgba(115, 132, 88) 60%, rgba(77, 89, 59, 1) 80%, rgba(37, 43, 29, 1) 100%) no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
+    justify-content: space-around;
+    box-sizing: border-box;
 }
 
 
 /* HEADER */
 
 .header {
-    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
+
 .title {
     font-family: 'Mouse Memoirs', sans-serif;
     text-align: center;
@@ -28,28 +36,27 @@ body {
 .main-title {
     margin: 0 auto;
     color: #FFF;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 0.25rem 0.25rem 0 #000;
 }
 
-.main-section {
-    height: 70vh;
-    margin: 2rem 0;
-}
 
+/* MAIN SECTION */
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
 
 /* CLOCK */
 
 .vertical-container {
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
 }
 
 .clockbox {
-    width: 100%;
     position: relative;
 }
 
@@ -104,6 +111,17 @@ body {
 
 .footer {
     height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.footer p {
+    color: #FFF;
+    font-family: 'Lekton', sans-serif;
+    text-align: center;
 }
 
 
@@ -114,12 +132,12 @@ body {
 @media (min-width: 576px) {
     
     .main-title {
-        font-size: 5rem;
+        font-size: 4rem;
         text-shadow: 0.3rem 0.3rem 0 #000;
     }
 
     .main-section {
-        width: 70vw;
+        width: 60vw;
     }
 
 }
@@ -128,7 +146,7 @@ body {
 @media (min-width: 768px) {
 
     .main-section {
-        width: 60vw;
+        width: 50vw;
     }
     
 }
@@ -137,12 +155,12 @@ body {
 @media (min-width: 992px) {
     
     .main-title {
-        font-size: 6rem;
+        font-size: 5rem;
         text-shadow: 0.3rem 0.3rem 0 #000;
     }
     
     .main-section {
-        width: 50vw;
+        width: 40vw;
     }
     
 }
@@ -151,7 +169,7 @@ body {
 @media (min-width: 1200px) {
 
     .main-section {
-        width: 40vw;
+        width: 30vw;
     }
 
 }
